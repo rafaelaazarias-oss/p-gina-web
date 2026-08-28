@@ -25,9 +25,13 @@
         width: 80px;
         height: 80px;
     }
+    .artigo-autor{  
+      font-weight: bold;
+    }
 
     </style>
 </head>
+
 
 <body>
     <header>
@@ -43,13 +47,11 @@
     <button> ❤️ <span>0</span></button>
     <button> 👎 <span>0</span></button>
     </div>
-      </main>
+</main>
 
 </body>
 <script>
-const botoes = document.querySelector("button");
-
-botoes. forEach(function(botao) {
+ const botoes = document.querySelector("button");
   botao. addEventListener ("click",botaoClicado);
 
  function botaoClicado () {
@@ -57,7 +59,7 @@ botoes. forEach(function(botao) {
   let texto = botao.querySelector("span");
   texto.textContent++;
  }
-});
+
 
 </script>
 </html>
